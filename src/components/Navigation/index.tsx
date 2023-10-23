@@ -22,6 +22,7 @@ interface IMenuData {
 const menuData: IMenuData[] = [
   {id: 'menu01', name: 'Home', path: '/'},
   {id: 'menu02', name: 'About', path: '/about'},
+  {id: 'menu03', name: 'Weather', path: '/weather'},
 ];
 
 function Navigation() {
