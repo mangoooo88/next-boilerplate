@@ -1,13 +1,6 @@
 import Link from "next/link";
 
-const getCurrentWeather = async () => {
-  const res = await fetch('http://api.weatherapi.com/v1/current.json?key=5a97e41a7b4846dc96765720232310&q=seoul&aqi=no')
-  return res.json()
-}
-
-async function Weather() {
-  const res = await getCurrentWeather()
-  console.log(res)
+function Weather() {
   return (
     <div>
       Weather
@@ -15,10 +8,9 @@ async function Weather() {
       <br/>
       <br/>
       <ul>
-        <li>
-          <Link href="/weather/seoul">서울</Link>
-          <Link href="/weather/japan">일본</Link>
-        </li>
+        <li><Link href="/weather/seoul">서울</Link></li>
+        <li><Link href="/weather/pyongyang">평양</Link></li>
+        <li><Link href="/weather/japan">일본</Link></li>
       </ul>
     </div>
   );

@@ -1,9 +1,9 @@
-export interface Root {
+export interface Response {
   location: Location
   current: Current
 }
 
-export interface Location {
+interface Location {
   name: string
   region: string
   country: string
@@ -14,7 +14,7 @@ export interface Location {
   localtime: string
 }
 
-export interface Current {
+interface Current {
   last_updated_epoch: number
   last_updated: string
   temp_c: number
@@ -40,7 +40,7 @@ export interface Current {
   gust_kph: number
 }
 
-export interface Condition {
+interface Condition {
   text: string
   icon: string
   code: number
