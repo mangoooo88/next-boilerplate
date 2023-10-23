@@ -20,7 +20,7 @@ interface IMenuData {
 }
 
 const menuData: IMenuData[] = [
-  {id: 'menu01', name: 'Home', path: '/home'},
+  {id: 'menu01', name: 'Home', path: '/'},
   {id: 'menu02', name: 'About', path: '/about'},
 ];
 

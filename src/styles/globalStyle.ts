@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { darkTheme, lightTheme } from "@/styles/theme";
+import { pretendard } from "@/styles/font";
 
 export const GlobalStyle = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
@@ -26,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    color: ;
+    font-family: ${pretendard.style.fontFamily};
   }
 
   /* HTML5 display-role reset for older browsers */
@@ -41,7 +42,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    line-height: 1;
+    line-height: 1.4;
   }
 
   menu, ol, ul {

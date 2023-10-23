@@ -1,7 +1,5 @@
+import Home from "@/pages/home";
+
 export default function Index() {
-  return (
-    <>
-      <div>Index</div>
-    </>
-  )
+  return <Home />
 }

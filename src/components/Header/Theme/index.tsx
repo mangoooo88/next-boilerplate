@@ -6,7 +6,7 @@ import { lightTheme, darkTheme } from "@/styles/theme";
 const ThemeButton = styled.button<{ $theme: string }>`
   font-size: 24px;
   background-color: transparent;
-  color: ${lightTheme.theme}
+  color: ${lightTheme.contrast}
 `
 
 function Theme() {
