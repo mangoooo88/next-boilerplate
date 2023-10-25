@@ -1,4 +1,4 @@
-export interface Response {
+export interface IResponse {
   location: Location
   current: Current
 }
